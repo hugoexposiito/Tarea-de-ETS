@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo POO</title>
+</head>
+<body>
+  <h2>Ejemplo de Programación Orientada a Objetos</h2>
+  <p id="salida"></p>
+
+  <script>
+    // Clase
+    class Perro {
+      constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+      }
+
+      // Método
+      ladrar() {
+        return "Guau. Mi nombre es " + this.nombre + " y tengo " + this.edad + " años.";
+      }
+    }
+
+    // Objeto
+    const perro1 = new Perro("Rex", 3);
+
+    // Mostrar resultado
+    document.getElementById("salida").textContent = perro1.ladrar();
+  </script>
+</body>
+</html>
